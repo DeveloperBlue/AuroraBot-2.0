@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/Features-Clean.css">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -20,14 +22,14 @@
 <body>
     <div>
         <nav class="navbar navbar-dark navbar-expand-md bg-dark navigation-clean-button">
-            <div class="container"><a class="navbar-brand text-white" href="#">AuroraBot 2.0</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container"><a class="navbar-brand text-white" href="#" target="_top">AuroraBot 2.0</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">About</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#features">Features</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#">Report a Bug</a></li>
                         <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">More</a>
-                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">My Website</a><a class="dropdown-item" role="presentation" href="#">Other Projects</a><a class="dropdown-item" role="presentation" href="#">Robotics</a></div>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">My Website</a><a class="dropdown-item" role="presentation" href="#">Other Projects</a><a class="dropdown-item" role="presentation" href="www.team5599.com">Robotics</a></div>
                         </li>
                     </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="#">Sign In with Discord</a></span></div>
     </div>
@@ -35,6 +37,8 @@
     </div>
     <div class="highlight-blue">
         <div class="container">
+            <div class="wobble animated auroraBotImage"></div>
+            <div class="spacer"></div>
             <div class="intro">
                 <h2 class="text-center">Just Another Discord Bot</h2>
                 <p class="text-center">AuroraBot is a Discord bot built with Node JS. It prides itself on having a small number of dependencies, and is currently locally hosted on a dedicated server. Anything from listening to music, rolling some dice, getting photos from NASA
@@ -44,12 +48,12 @@
         </div>
     </div>
     <div class="features-clean">
-        <div class="container">
+        <div class="container" id="features">
             <div class="intro">
                 <h2 class="text-center">Features</h2>
                 <p class="text-center">AuroraBot has a variety of useful, unique, and fun commands!</p>
             </div>
-            <div class="row features">
+            <div class="row features" data-aos="zoom-in-up">
                 <div class="col-sm-6 col-lg-4 item"><i class="fa fa-thumbs-o-up icon"></i>
                     <h3 class="name">Fun!</h3>
                     <p class="description">AuroraBot has a ton of fun commands. Roll some dice, make it choose between things for you, get some pictures from a NASA rover or satellite, compute crazy queries with Wolfram, and look up Anime information and streaming sites.</p>
@@ -76,7 +80,10 @@
                     <h3 class="name">NSFW Channel Control</h3>
                     <p class="description">You can choose to completely remove and hide NSFW commands, have them work only in NSFW marked channels, only in white-listed channels, or in all channels but black-listed channels. You control where the NSFW goes.</p>
                 </div>
+                <div class="col"></div>
             </div>
+            <div class="spacer"></div><button class="btn btn-primary" type="button" id="AllCommandsButton">All Commands</button>
+            <div class="spacerSecond"></div>
         </div>
     </div>
     <div class="testimonials-clean">
@@ -85,7 +92,7 @@
                 <h2 class="text-center">Testimonials </h2>
                 <p class="text-center">I asked my friends what they thought about my bot. Then I inverted their responses into something positive.</p>
             </div>
-            <div class="row people">
+            <div class="row people" data-aos="slide-up">
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box">
                         <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
@@ -116,21 +123,9 @@
             </div>
         </div>
     </div>
-    <div class="newsletter-subscribe">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Want to be notified on updates?</h2>
-                <p class="text-center">Get emails on major updates for AuroraBot and other published project I am working on.</p>
-            </div>
-            <form class="form-inline" method="post">
-                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
-                <div class="form-group"><button class="btn btn-primary" type="submit">Subscribe </button></div>
-            </form>
-        </div>
-    </div>
     <div class="footer-basic">
         <footer>
-            <div class="social"><a href="#"><i class="fa fa-user"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a></div>
+            <div class="social"><a href="#"><i class="fa fa-user"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a></div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">AuroraBot</a></li>
                 <li class="list-inline-item"><a href="#">Bug Report</a></li>
@@ -143,6 +138,8 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,21 @@
+#AllCommandsButton {
+  float:right;
+}
+
+.auroraBotImage {
+  height:120px;
+  width:120px;
+  background-image:url("https://cdn.discordapp.com/avatars/265445003176837120/af8f1363979cf904bcfaaf34e3f523d3.png?size=128");
+  border-radius:45px;
+  border:2px solid #ffffff;
+  margin:0 auto;
+}
+
+.spacer {
+  height:20px;
+}
+
+.spacerSecond {
+  height:100px;
+}
+
