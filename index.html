@@ -6,142 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AuroraBot SplashPage</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/Features-Clean.css">
-    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
-    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/Testimonials.css">
 </head>
 
 <body>
-    <div>
-        <nav class="navbar navbar-dark navbar-expand-md bg-dark navigation-clean-button">
-            <div class="container"><a class="navbar-brand text-white" href="#" target="_top">AuroraBot 2.0</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div
-                    class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#features">Features</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Report a Bug</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">More</a>
-                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">My Website</a><a class="dropdown-item" role="presentation" href="#">Other Projects</a><a class="dropdown-item" role="presentation" href="www.team5599.com">Robotics</a></div>
-                        </li>
-                    </ul><span class="navbar-text actions"><a class="btn btn-dark" role="button" href="#" id="invite-header">Invite to server</a> <a class="btn btn-light action-button" role="button" href="#">Sign In with Discord</a></span></div>
-    </div>
-    </nav>
-    </div>
-    <div class="highlight-blue">
-        <div class="container">
-            <div class="wobble animated auroraBotImage"></div>
-            <div class="spacer"></div>
-            <div class="intro">
-                <h2 class="text-center">Just Another Discord Bot</h2>
-                <p class="text-center">AuroraBot is a Discord bot built with Node JS. It prides itself on having a small number of dependencies, and is currently locally hosted on a dedicated server. Anything from listening to music, rolling some dice, getting photos from NASA
-                    satelites at specific coordinates, or keeping activity logs, AuroraBot strives to deliver with as much functionality as possible!</p>
-            </div>
-            <div class="buttons"><a class="btn btn-primary" role="button" href="#">Invite to server</a></div>
-        </div>
-    </div>
-    <div class="features-clean">
-        <div class="container" id="features">
-            <div class="intro">
-                <h2 class="text-center">Features</h2>
-                <p class="text-center">AuroraBot has a variety of useful, unique, and fun commands!</p>
-            </div>
-            <div class="row features" data-aos="zoom-in-up">
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-thumbs-o-up icon"></i>
-                    <h3 class="name">Fun!</h3>
-                    <p class="description">AuroraBot has a ton of fun commands. Anything from the generic rolling of dice and flipping a coin to browsing pictures of NASA rovers, getting what's trending on Twitter, compute crazy queries with Wolfram Alpha, and look up Anime
-                        information and streaming sites.</p>
+    <div class="modal fade" role="dialog" tabindex="-1" id="invite-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">AuroraBot Alpha Testing</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <p class="text-center">AuroraBot is highly experimental! Currently adding the bot to your server does not guarantee stability, and there may be sudden restarts.</p>
                 </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-clock-o icon"></i>
-                    <h3 class="name">Mostly Available</h3>
-                    <p class="description">AuroraBot is hosted on a dedicated server rig in my basement. Therefore, things can go wrong. It's generally up 24/7, but of course accidents and residential problems can occur. Aer you willing to pay for some AWS/Google Cloud dedicated
-                        Node JS servers? Feel free to contact me!</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-list-alt icon"></i>
-                    <h3 class="name">Moderation</h3>
-                    <p class="description">AuroraBot handles moderation with ease. It is able to keep thorough logs for various events like message deletion, status changes, message editting, etc. and output them in whatever specific channels you would like. Also features an
-                        auto-role system for allowing users to assign themselves certain roles.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-music icon"></i>
-                    <h3 class="name">Music</h3>
-                    <p class="description">Featuring extreme functionality, AuroraBot can add playlists, re-arrange, micro-manage, and shuffle the queue, set dedicated text and voice channels, and more!<br></p>
-                    <p class="description">AuroraBot supports over 100+ services, including YouTube, SoundCloud, and Vimeo. You can also play direct .mp3 links and uploaded .mp3 files!</p><a href="https://rg3.github.io/youtube-dl/supportedsites.html">List of supported services [Here]</a></div>
-                <div
-                    class="col-sm-6 col-lg-4 item"><i class="fa fa-comment icon"></i>
-                    <h3 class="name">Chatty</h3>
-                    <p class="description">AuroraBot is always reading everything you say! EVERYTHING! #NSA #FBI #SONY #AlexaLaughsRandomlyAtNight. A chatbot API is on it's way, which can allow you to have some slightly-better-than-Cleverbot level conversations!</p>
-            </div>
-            <div class="col-sm-6 col-lg-4 item"><i class="icon ion-android-bar icon"></i>
-                <h3 class="name">NSFW Channel Control</h3>
-                <p class="description">You can choose to completely remove and hide NSFW commands, have them work only in NSFW marked channels, only in white-listed channels, or in all channels but black-listed channels. You control where the NSFW goes. AuroraBot features a
-                    good number of NSFW commands, ranging from querying adult websites to triggering lewd neko bombs.</p>
-            </div>
-        </div>
-        <div class="spacer"></div><button class="btn btn-outline-primary" type="button" id="AllCommandsButton">All Commands</button>
-        <div class="spacerSecond"></div>
-    </div>
-    </div>
-    <div class="testimonials-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Testimonials </h2>
-                <p class="text-center">I asked my friends what they thought about my bot. Then I inverted their responses into something positive.</p>
-            </div>
-            <div class="row people" data-aos="slide-up">
-                <div class="col-md-6 col-lg-4 item">
-                    <div class="box">
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                    </div>
-                    <div class="author"><img class="rounded-circle" src="assets/img/1.jpg">
-                        <h5 class="name">Ben Johnson</h5>
-                        <p class="title">CEO of Company Inc.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <div class="box">
-                        <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</p>
-                    </div>
-                    <div class="author"><img class="rounded-circle" src="assets/img/3.jpg">
-                        <h5 class="name">Carl Kent</h5>
-                        <p class="title">Founder of Style Co.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <div class="box">
-                        <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
-                    </div>
-                    <div class="author"><img class="rounded-circle" src="assets/img/2.jpg">
-                        <h5 class="name">Emily Clark</h5>
-                        <p class="title">Owner of Creative Ltd.</p>
-                    </div>
-                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button class="btn btn-primary" type="button" id="modal-invite-button">Continue adding AuroraBot</button></div>
             </div>
         </div>
     </div>
-    <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="fa fa-user"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a></div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">AuroraBot</a></li>
-                <li class="list-inline-item"><a href="#">Bug Report</a></li>
-                <li class="list-inline-item"><a href="#">Other Projects</a></li>
-                <li class="list-inline-item"><a href="#">Robotics</a></li>
-                <li class="list-inline-item"><a href="#">Contact</a></li>
-            </ul>
-            <p class="copyright">MichaelRooplall © 2018</p>
-        </footer>
+    <div class="topbar">
+        <div class="topbar_inner">
+            <h4 class="topbar_title"><strong>AuroraBot</strong></h4><button class="btn btn-primary btn-sm topbar_button" type="button" id="topbar-about">About</button><button class="btn btn-primary btn-sm topbar_button" type="button" id="topbar-commands">Commands</button>
+            <button
+                class="btn btn-primary btn-sm topbar_button" type="button" id="topbar-dashboard">Dashboard</button>
+                <div class="dropdown topbar_button_dropdown"><button class="btn btn-primary btn-sm dropdown-toggle topbar_button" data-toggle="dropdown" aria-expanded="false" type="button">More&nbsp;</button>
+                    <div class="dropdown-menu" role="menu">
+                        <h6 class="dropdown-header" role="presentation"><strong>AuroraBot</strong></h6><a class="dropdown-item" role="presentation" href="#" id="topbar-invite-sub">Invite AuroraBot<i class="fa fa-user-plus button-icon"></i></a><a class="dropdown-item" role="presentation" href="#" id="topbar-server">Support Server</a>
+                        <div
+                            class="dropdown-divider" role="presentation"></div>
+                    <h6 class="dropdown-header" role="presentation"><strong>Developer Content</strong></h6><a class="dropdown-item" role="presentation" href="#" id="topbar-projects">Other Projects</a><a class="dropdown-item" role="presentation" href="http://www.team5599.com" id="topbar-robotics">Robotics</a>
+                    <div
+                        class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#" id="topbar-donation">Make a Donation</a></div>
+    </div><button class="btn btn-primary btn-sm topbar-discord" type="button" id="topbar-sign-in"><strong>Sign in with Discord</strong><img src="assets/img/Discord-Logo-White.svg" class="topbar_discord_icon"></button><button class="btn btn-primary btn-sm topbar_invite" type="button"
+        id="topbar-invite"><strong>Invite to Server</strong></button></div>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <div class="divider"></div>
+    <div id="particle-container" class="particle-container"><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script></div>
+    <div class="content-container">
+        <div>
+            <h1 class="text-center text-white title">AuroraBot</h1>
+            <p class="text-center text-light main-p">There's a great big world out there.<br></p>
+        </div>
+        <div><button class="btn btn-primary button-attempt button-attempt-a" type="button" data-aos="fade-up" data-aos-duration="500" data-aos-offset="0" id="main-invite">Invite to Server</button><button class="btn btn-primary button-attempt button-attempt-b"
+                type="button" data-aos="fade-up" data-aos-duration="500" data-aos-offset="0" data-aos-delay="50" id="main-server">Join Aurora's Hub</button><button class="btn btn-primary button-attempt button-attempt-c" type="button" data-aos="fade-up" data-aos-duration="450"
+                data-aos-offset="0" data-aos-delay="100" id="main-dashboard">Manage Dashboard</button></div><button class="btn btn-primary scroll-button" type="button" id="sub-scroll-about-button"><i class="far fa-arrow-alt-circle-down"></i></button></div>
+    <div
+        class="divider"></div>
+        <div class="base-secondary">
+            <div data-aos="zoom-in" data-aos-offset="200" class="content-container">
+                <div class="row skew-container">
+                    <div class="col-lg-6 col-xl-6">
+                        <div>
+                            <p class="lead text-center text-white sub-p" id="about-aurorabot">AuroraBot features a ton of commands and a ton of modularity!</p><button class="btn btn-primary sub-button" type="button" id="sub-commands">See All Commands</button>
+                            <p class="text-center text-white sub-p sub-p-top">Ranging from Fun, Utility, Search, Music, NSFW, and Moderation, AuroraBot features a plethora of commands and modularity. Anything can be disabled, hidden, configured, and role-locked at any time.</p>
+                        </div>
+                        <div class="sub-divider"></div>
+                        <div class="icon-container"><button class="btn btn-primary btn-hidden-commands" type="button"><i class="fa fa-search aurora-icon-sm"></i><i class="fa fa-music aurora-icon-sm"></i><i class="fa fa-glass aurora-icon-sm"></i><i class="fa fa-legal aurora-icon-sm"></i><i class="fa fa-lemon-o aurora-icon-sm"></i><i class="fa fa-magic aurora-icon-sm"></i><i class="fa fa-lock aurora-icon-sm"></i><i class="fa fa-gear aurora-icon-sm"></i></button></div>
+                        <div
+                            class="sub-divider sub-divider-bottom"></div>
+                    <div class="info-screen">
+                        <div class="info-screen-tile info-screen-tile-top-icons"></div>
+                        <div class="info-screen-tile info-screen-commands"><span class="text-monospace text-white info-text info-command-text" id="flow-text"></span></div>
+                        <div class="info-screen-tile"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6">
+                    <div class="info-screen">
+                        <div class="info-screen-tile info-screen-tile-top">
+                            <p class="text-monospace text-white info-text">STATUS: OFFLINE</p>
+                        </div>
+                        <div class="info-screen-tile">
+                            <p class="lead text-monospace text-white info-text">SERVING</p>
+                            <p class="text-monospace text-white info-text">0 Guilds</p>
+                            <p class="text-monospace text-white info-text">0 Members</p>
+                            <p class="text-monospace text-white info-text">0 Voice Connections</p>
+                            <p class="text-monospace text-white info-text">0 Channels</p>
+                        </div>
+                        <div class="info-screen-tile"></div>
+                    </div>
+                    <div class="info-screen-patreon">
+                        <p class="text-center text-white sub-p">From hosting and scaling the bot, using databases, hosting the web dashboard, and purchasing domain names, providing this service does not come cheap. You can help support AuroraBot and various other projects with a single pledge
+                            to Patreon!</p><button class="btn btn-primary sub-button" type="button" id="sub-donate">Donate to Patreon</button><button class="btn btn-primary sub-button" type="button" id="sub-projects">Developer's Other Projects</button></div>
+                    <div
+                        class="info-screen">
+                        <div class="info-screen-tile">
+                            <p class="text-monospace text-white info-text">ACTIVE SHARDS: 0 of 0</p>
+                            <p class="text-monospace text-white info-text">UPTIME: 00:00:00</p>
+                        </div>
+                        <div class="info-screen-tile"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="developer-score">
+            <div class="developer-score-inner"><img src="assets/img/Profile.png" class="developer-image">
+                <div class="developer-text">
+                    <p class="lead developer-heading">DeveloperBlue</p>
+                    <p class="developer-heading">Michael Rooplall<a class="btn btn-primary developer-icon" role="button" href="https://twitter.com/MichaelRooplall"><i class="fa fa-twitter developer-twitter-icon"></i></a><a class="btn btn-primary developer-icon developer-icon-c" role="button"
+                            href="https://twitter.com/MichaelRooplall"><i class="fa fa-linkedin-square"></i></a><a class="btn btn-primary developer-icon developer-icon-b" role="button" href="https://github.com/DeveloperBlue"><i class="fa fa-github"></i></a></p>
+                    <button
+                        class="btn btn-primary developer-button" type="button">See Projects</button>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer">
+            <p class="lead text-center text-white" id="footer-p">. . .</p>
+            <p class="text-center text-white" id="copyright-p">AuroraBot Copyright © DeveloperBlue 2018</p>
+        </div>
+        <div class="divider"></div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/bs-animation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/star-particles.js"></script>
 </body>
 
 </html>
